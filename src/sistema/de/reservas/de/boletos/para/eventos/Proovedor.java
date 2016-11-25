@@ -9,6 +9,6 @@ package sistema.de.reservas.de.boletos.para.eventos;
  *
  * @author Galo
  */
-public class Proovedor {
+public class Proovedor extends Usuario{
     
 }
