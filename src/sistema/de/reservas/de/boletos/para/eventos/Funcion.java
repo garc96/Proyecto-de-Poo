@@ -13,6 +13,8 @@ import java.util.Date;
  */
 public class Funcion {
     private int numFunciones ; 
-    private Date date; 
+    private Date date;
+    private float PrecioBoleto;
+    private int BoletosVendidos;
    
 }
