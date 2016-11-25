@@ -11,5 +11,5 @@ package sistema.de.reservas.de.boletos.para.eventos;
  */
 public class Escenario {
      private int capacidadAsistentes ;
-     private String ubicacion, codigoEscenario; 
+     private String ubicacion; 
 }
