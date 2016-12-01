@@ -12,7 +12,9 @@ import java.util.Date;
  * @author FIMCP
  */
 public class Funcion {
-    private String nombreFuncion ; 
-    private Date date; 
+    private int numFunciones ; 
+    private Date date;
+    private float PrecioBoleto;
+    private int BoletosVendidos;
    
 }

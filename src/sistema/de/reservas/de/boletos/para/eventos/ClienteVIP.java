@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistema.de.reservas.de.boletos.para.eventos;
+package proyectopoo;
 
 /**
  *
- * @author Galo
+ * @author edward
  */
-public class Proovedor extends Usuario {
+public class ClienteVIP extends Cliente{
     
 }
