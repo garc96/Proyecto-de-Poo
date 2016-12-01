@@ -5,14 +5,20 @@
  */
 package sistema.de.reservas.de.boletos.para.eventos;
 
-import java.util.Date;
-
 /**
  *
- * @author FIMCP
+ * @author Galo
  */
-public class Funcion {
-    private String nombreFuncion ; 
-    private Date date; 
-   
+public enum TipoEvento {
+    Concierto, 
+    PartidoDeFútbol, 
+    Teatro;
+    
+    private String nombreBanda; 
+    private String equipo1, equipo2 ;
+    private String nombreGrupo ; 
+    
+    
+    
+    
 }

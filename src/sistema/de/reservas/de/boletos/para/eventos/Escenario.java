@@ -10,6 +10,19 @@ package sistema.de.reservas.de.boletos.para.eventos;
  * @author Garc
  */
 public class Escenario {
+     private String nombreEscenario ; 
      private int capacidadAsistentes ;
-     private String ubicacion ; 
+     private String ubicacion ;
+     private String codigoEscenario ; 
+     
+     
+     public Escenario (){
+     }
+     
+     public Escenario ( String codigoEscenario, String nombreEscenario, String ubicacion , int capacidadAsistentes ){
+     this.codigoEscenario = codigoEscenario; 
+     this.nombreEscenario = nombreEscenario; 
+     this.ubicacion= ubicacion; 
+     this.capacidadAsistentes=capacidadAsistentes; 
+     }
 }
