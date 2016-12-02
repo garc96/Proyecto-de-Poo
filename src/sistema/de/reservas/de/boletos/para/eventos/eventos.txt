@@ -1,5 +1,0 @@
-2345, Romeo y Julieta, Puesta en escena la obra de william shakespeare romeo y julieta, tetatro, 0002, acarrera, 14//11/2016, 19:30, $10, 0 
-2345, Romeo y Julieta, Puesta en escena la obra de william shakespeare romeo y julieta, tetatro, 0002, acarrera, 14//11/2016, 19:30, $20, 20 
-2345, Romeo y Julieta, Puesta en escena la obra de william shakespeare romeo y julieta, tetatro, 0002, acarrera, 14//11/2016, 19:30, $10, 5
-2346, Barcelona vs Emelec, Clásico del Astillero, Partido de Fútbol, 0003, acarrera, 27/11/2016, 18:00, $15, 1000
-2347, End the Madness,  Last performance of "Madness" album by Sleeping with Sirens,  Concierto, garc, 13/12/2016, 20:00, $60, 245

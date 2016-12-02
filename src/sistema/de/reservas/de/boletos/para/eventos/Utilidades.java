@@ -7,15 +7,8 @@ package sistema.de.reservas.de.boletos.para.eventos;
 
 /**
  *
- * @author FIMCP
+ * @author Galo
  */
-public class SistemaDeReservasDeBoletosParaEventos {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-    }
+public class Utilidades {
     
 }
