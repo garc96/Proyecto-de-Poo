@@ -5,6 +5,13 @@
  */
 package sistema.de.reservas.de.boletos.para.eventos;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
@@ -12,20 +19,19 @@ import java.util.ArrayList;
  * @author Garc96
  */
 public class Authentication {
-    protected Information info; 
-    protected static String nombre_Archivo="data/Usuarios.csv";
-    
-    public Authentication (){
+
+    private static String nombre_Archivo = "data/Usuarios.csv";
+    private Usuario person;
+
+    public Authentication() {
     }
-    
-    
-    public  boolean validarUsuario(){
-        ArrayList<Information> data = new ArrayList<Information>(); 
-        data = MoreInformation.readFromFileToArray(Authentication.nombre_Archivo);
-        for (int i=0; i<data.size() ; i++){
-            System.out.println(data.get(i));
+
+    public static boolean validarUsuario(Usuario person) {
+        ArrayList<Usuario> data = Utilidades.returnAllRegisteredUsers(nombre_Archivo);
+        for (int i = 0; i < data.size(); i++) {
+            System.out.println(person.getUsername()==data.get(i).getUsername());
         }
-        return true; 
+        return true;
     }
-    
+
 }

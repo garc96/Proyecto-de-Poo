@@ -32,5 +32,14 @@ public class MoreInformation extends Information {
     mensaje+=dato4;
     return mensaje; 
     }
+
+    public String getDato4() {
+        return dato4;
+    }
+
+    public void setDato4(String dato4) {
+        this.dato4 = dato4;
+    }
+    
     
 }

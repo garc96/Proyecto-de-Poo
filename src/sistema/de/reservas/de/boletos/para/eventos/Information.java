@@ -36,31 +36,7 @@ public class Information {
         this.dato3 = d3;
     }
 
-    public static ArrayList<Information> readFromFileToArray(String nombre_Archivo) {
-        try {
-            InputStream is = new FileInputStream(new File(nombre_Archivo));
-            BufferedReader br = new BufferedReader(new InputStreamReader(is));
-            
-            String line;
-            Information inf = new Information();
-            ArrayList<Information> informacion = new ArrayList<>();
-            while ((line = br.readLine()) != null) {
-                inf = inf.mapToCsv(line);
-                informacion.add(inf);
-            }
-            return informacion;
-        } catch (FileNotFoundException mensajeError) {
-            System.out.println("File " + nombre_Archivo + " not found");
-        } catch (IOException mensajeError) {
-            System.out.println("Error al tratar de abrir" + nombre_Archivo);
-        }
-        return null;
-    }
 
-    public Information mapToCsv(String line) {
-        String[] i = line.split(", ");
-        return new Information(i[0], i[1], i[2], i[3]);
-    }
 
     public String getDato0() {
         return dato0;
