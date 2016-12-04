@@ -7,7 +7,7 @@ package sistema.de.reservas.de.boletos.para.eventos;
 
 /**
  *
- * @author FIMCP
+ * @author Garc
  */
 public class SistemaDeReservasDeBoletosParaEventos {
 
@@ -15,6 +15,9 @@ public class SistemaDeReservasDeBoletosParaEventos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Authentication auth = new  Authentication() ; 
+        auth.validarUsuario();
+        
         
     }
     

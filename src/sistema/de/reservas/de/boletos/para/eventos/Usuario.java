@@ -8,7 +8,7 @@ package sistema.de.reservas.de.boletos.para.eventos;
 public class Usuario {
     protected String username ;
     protected String constraseña ; 
-    protected Informacion inf;
+    protected Information inf;
     protected MoreInformation minf;
     
 }
