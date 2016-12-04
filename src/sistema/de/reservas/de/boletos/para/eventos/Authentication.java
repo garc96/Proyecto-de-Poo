@@ -26,12 +26,15 @@ public class Authentication {
     public Authentication() {
     }
 
-    public static boolean validarUsuario(Usuario person) {
+    public  boolean validarUsuario(Usuario person) {
         ArrayList<Usuario> data = Utilidades.returnAllRegisteredUsers(nombre_Archivo);
         for (int i = 0; i < data.size(); i++) {
-            System.out.println(person.getUsername()==data.get(i).getUsername());
+            if (person.getUsername().equals(data.get(i).getUsername()) && person.getPassword().equals(data.get(i).getPassword()) ) {
+                return true;
+            }
         }
-        return true;
+        return false ; 
+
     }
 
 }

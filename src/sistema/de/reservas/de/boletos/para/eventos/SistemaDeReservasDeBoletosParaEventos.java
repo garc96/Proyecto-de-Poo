@@ -18,9 +18,6 @@ public class SistemaDeReservasDeBoletosParaEventos {
      */
     public static void main(String[] args) {
         Authentication auth = new  Authentication() ;  
-        Usuario gabriel = new Usuario("Garc", "1748"); 
-        Usuario belen  =  new Usuario("Garc", "1748"); 
-        System.out.println(belen.equals(gabriel));
         Scanner entradaEscaner = new Scanner (System.in); 
         String username = entradaEscaner.nextLine();
         String password = entradaEscaner.nextLine();
