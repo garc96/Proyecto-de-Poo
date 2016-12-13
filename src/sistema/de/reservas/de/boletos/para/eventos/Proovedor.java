@@ -10,4 +10,10 @@ package sistema.de.reservas.de.boletos.para.eventos;
  * @author Galo
  */
 public class Proovedor extends Usuario {
+    private final String Tipo="Proovedor"; 
+
+    public String getTipo() {
+        return Tipo;
+    }
+    
 }
