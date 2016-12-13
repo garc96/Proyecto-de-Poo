@@ -61,4 +61,11 @@ public class Utilities {
         }
         return null; 
     }
+    
+    public static void imprimirMenu() {
+            System.out.println("Hi, welcome to the Ticket booking systems for events");
+            System.out.println("Please select a option");
+            System.out.println("1.- Let's start");
+            System.out.println("2.- Close");
+    }
 }

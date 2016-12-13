@@ -19,27 +19,33 @@ public class SistemaDeReservasDeBoletosParaEventos {
      */
     public static void main(String[] args) {
 
-        Scanner entradaEscaner = new Scanner(System.in); 
-        ArrayList<String[]> userList = Utilities.returnAllRegisteredUsers("data/Usuarios.csv"); // Una coleccion de arreglos de String donde guarda toda la informacion de usuarios
-        String username = "" ; 
-        String password = "" ; 
-        boolean validarError = true;
-        do {
-            try {
-                System.out.println("Enter your username ");
+        Utilities.imprimirMenu();
+        Scanner entradaEscaner = new Scanner(System.in);
+        int option = 0;
+        option = entradaEscaner.nextInt();
+        while (option != 2) {
+            ArrayList<String[]> userList = Utilities.returnAllRegisteredUsers("data/Usuarios.csv"); // Una coleccion de arreglos de String donde guarda toda la informacion de usuarios
+            String username = "";
+            String password = "";
+            boolean validarError = true;
+            
+            while (validarError) {
+                System.out.println("Please enter your username ");
                 username = entradaEscaner.nextLine();
-                System.out.println("Enter your Password ");
+                System.out.println("Now your Password ");
                 password = entradaEscaner.nextLine();
-                validarError=Utilities.validarUsuario(username, password, userList); // validamos que este en el sitema
-            } catch (Exception e) {
-                System.out.println("Ingresa bien los datos ");
+                validarError = Utilities.validarUsuario(username, password, userList); 
+            } // mientras no este en el sistema estara en un loop infinito 
+
+            String[] user = Utilities.returnsUserData(username, password, userList);
+            System.out.println("Hi " + user[2] + " you are a " + user[4]);
+
+            if (user[4].equals("proovedor")) {
+
+            } else if (user[4].equals("cliente") || user[4].equals("clientevip")) {
+
             }
-        } while (validarError);
-        
-        String[] user = Utilities.returnsUserData(username, password, userList);
-        System.out.println("Hi "+user[2]+" you are a " + user[3]);
-        
-        
+        }
     }
 
 }
