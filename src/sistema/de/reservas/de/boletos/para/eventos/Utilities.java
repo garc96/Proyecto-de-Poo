@@ -44,11 +44,11 @@ public class Utilities {
         for (int i = 0; i < listaDeUsuarios.size(); i++) {
             for (int k = 0; k < listaDeUsuarios.get(i).length - 1; k++) {
                 if (listaDeUsuarios.get(i)[k].equals(username) && listaDeUsuarios.get(i)[k + 1].equals(password)) {
-                    return false;
+                    return true;
                 }
             }
         }
-        return true;
+        return false;
     }
 
     public static String[] returnsUserData(String username, String password, ArrayList<String[]> listaDeUsuarios){
@@ -63,9 +63,17 @@ public class Utilities {
     }
     
     public static void imprimirMenu() {
-            System.out.println("Hi, welcome to the Ticket booking systems for events");
-            System.out.println("Please select a option");
+            System.out.println("Please select an option");
             System.out.println("1.- Let's start");
             System.out.println("2.- Close");
+    }
+    
+    public static void imprimirMenuProovedor() {
+    String imprimir = "" ; 
+    imprimir+="What would you like to do? \n";
+    imprimir+="1.-Create Proyect \n";
+    imprimir+="2.-Check how many tickets are selling of an event that has not yet been made \n"; 
+    imprimir+="3.-Log out";
+        System.out.println(imprimir);
     }
 }

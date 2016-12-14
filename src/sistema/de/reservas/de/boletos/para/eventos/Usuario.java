@@ -20,7 +20,6 @@ public class Usuario {
         this.name=name; 
         this.correo=correo; 
     }
-
     public String getUsername() {
         return username;
     }

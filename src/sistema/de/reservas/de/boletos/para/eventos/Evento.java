@@ -14,5 +14,55 @@ public class Evento {
     private String descripcionEvento; 
     private Escenario escenario ; 
     private int codigo; 
-    private Funcion funcion;    
+    private Funcion funcion;   
+ 
+    
+    public Evento(){}
+    public enum Categoria {  Concierto,  PartidoDeFútbol,   Teatro}
+    
+
+    
+    
+
+    public String getNombreEvento() {
+        return nombreEvento;
+    }
+
+    public void setNombreEvento(String nombreEvento) {
+        this.nombreEvento = nombreEvento;
+    }
+
+    public String getDescripcionEvento() {
+        return descripcionEvento;
+    }
+
+    public void setDescripcionEvento(String descripcionEvento) {
+        this.descripcionEvento = descripcionEvento;
+    }
+
+    public Escenario getEscenario() {
+        return escenario;
+    }
+
+    public void setEscenario(Escenario escenario) {
+        this.escenario = escenario;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public Funcion getFuncion() {
+        return funcion;
+    }
+
+    public void setFuncion(Funcion funcion) {
+        this.funcion = funcion;
+    }
+    
+    
 }

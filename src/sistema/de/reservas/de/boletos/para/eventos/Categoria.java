@@ -9,16 +9,21 @@ package sistema.de.reservas.de.boletos.para.eventos;
  *
  * @author Galo
  */
-public enum TipoEvento {
-    Concierto, 
+public enum  Categoria {
+    Concierto , 
     PartidoDeFútbol, 
     Teatro;
     
-    private String nombreBanda; 
-    private String equipo1, equipo2 ;
-    private String nombreGrupo ; 
+    Categoria(){
+    }
     
     
     
+        }
     
-}
+    
+  
+    
+    
+    
+

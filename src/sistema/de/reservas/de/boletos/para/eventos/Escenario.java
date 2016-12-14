@@ -11,7 +11,7 @@ package sistema.de.reservas.de.boletos.para.eventos;
  */
 public class Escenario {
      private String nombreEscenario ; 
-     private int capacidadAsistentes ;
+     private String capacidadAsistentes ;
      private String ubicacion ;
      private String codigoEscenario ; 
      
@@ -19,10 +19,14 @@ public class Escenario {
      public Escenario (){
      }
      
-     public Escenario ( String codigoEscenario, String nombreEscenario, String ubicacion , int capacidadAsistentes ){
+     public Escenario ( String codigoEscenario, String nombreEscenario, String ubicacion , String capacidadAsistentes ){
      this.codigoEscenario = codigoEscenario; 
      this.nombreEscenario = nombreEscenario; 
      this.ubicacion= ubicacion; 
      this.capacidadAsistentes=capacidadAsistentes; 
      }
+     
+    
+     
+     
 }

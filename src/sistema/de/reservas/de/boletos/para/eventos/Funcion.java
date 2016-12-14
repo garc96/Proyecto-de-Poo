@@ -12,26 +12,27 @@ import java.util.Date;
  * @author FIMCP
  */
 public class Funcion {
-    private int numFunciones ; 
+    private String nameFuncion; 
     private Date date;
     private float PrecioBoleto;
     private int BoletosVendidos;
     private int Boletos;
 
     public Funcion(int numFunciones, Date date, float PrecioBoleto, int BoletosVendidos) {
-        this.numFunciones = numFunciones;
+       
         this.date = date;
         this.PrecioBoleto = PrecioBoleto;
         this.BoletosVendidos = BoletosVendidos;
     }
 
-    public int getNumFunciones() {
-        return numFunciones;
+    public String getNameFuncion() {
+        return nameFuncion;
     }
 
-    public void setNumFunciones(int numFunciones) {
-        this.numFunciones = numFunciones;
+    public void setNameFuncion(String nameFuncion) {
+        this.nameFuncion = nameFuncion;
     }
+
 
     public Date getDate() {
         return date;
