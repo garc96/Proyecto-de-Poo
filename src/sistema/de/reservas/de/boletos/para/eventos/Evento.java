@@ -70,7 +70,7 @@ public class Evento {
     
     public String mensajeEscribir(String categoriaa,String nombreUser){
     String msj="";
-    msj+=getCodigo()+" ,"+getNombreEvento()+" ,"+getDescripcionEvento()+" ,"+categoriaa+" ,"+escenario.getCodigoEscenario()+" ,"+ nombreUser+", ";
+    msj+=getCodigo()+", "+getNombreEvento()+", "+getDescripcionEvento()+", "+categoriaa+", "+escenario.getCodigoEscenario()+", "+ nombreUser+", ";
     return msj ;
     }
     

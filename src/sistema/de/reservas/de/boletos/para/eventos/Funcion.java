@@ -63,7 +63,7 @@ public class Funcion {
     }
    
     public String keepWriting(String msj){
-        msj+="fecha "+ date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getYear()+" ,"+getPrecioBoleto()+", 0";
+        msj+="fecha "+ date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getYear()+", "+getPrecioBoleto()+", 0";
         return msj;
     }
     

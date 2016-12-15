@@ -9,12 +9,18 @@ package sistema.de.reservas.de.boletos.para.eventos;
  *
  * @author Galo
  */
-public enum  Categoria {
-    Concierto , 
-    PartidoDeFútbol, 
-    Teatro;
+public class  Categoria {
+    String  estado;
     
-    Categoria(){
+    
+    public  Categoria(){
+    }
+    
+    public Categoria( String estado){
+    this.estado=estado;
+    }
+    public enum Estado{
+    Concert, Play, SoccerMatch
     }
     
     

@@ -41,9 +41,20 @@ public class Utilities {
         }
         return null;
     }
-    
- 
 
+    public static void imprimirMenuCategoria() {
+        System.out.println("Please select the category");
+        System.out.println("1) Concert");
+        System.out.println("2) Play");
+        System.out.println("3) Soccer match ");
+    }
+    public static void imprimirEscenario(ArrayList<String[]> scenariosList ){
+        System.out.println("Please select the scenario: ");
+        for (int i = 0; i < scenariosList.size(); i++) {
+            System.out.println((i+1)+") "+scenariosList.get(i)[0]+ " "+scenariosList.get(i)[1]);
+                                            }
+    
+    }
     public static boolean validarUsuario(String username, String password, ArrayList<String[]> listaDeUsuarios) {
 
         for (int i = 0; i < listaDeUsuarios.size(); i++) {
@@ -56,7 +67,7 @@ public class Utilities {
         return false;
     }
 
-    public static String[] returnsUserData(String username, String password, ArrayList<String[]> listaDeUsuarios){
+    public static String[] returnsUserData(String username, String password, ArrayList<String[]> listaDeUsuarios) {
         for (int i = 0; i < listaDeUsuarios.size(); i++) {
             for (int k = 0; k < listaDeUsuarios.get(i).length - 1; k++) {
                 if (listaDeUsuarios.get(i)[k].equals(username) && listaDeUsuarios.get(i)[k + 1].equals(password)) {
@@ -64,21 +75,21 @@ public class Utilities {
                 }
             }
         }
-        return null; 
+        return null;
     }
-    
+
     public static void imprimirMenu() {
-            System.out.println("Please select an option");
-            System.out.println("1.- Let's start");
-            System.out.println("2.- Close");
+        System.out.println("Please select an option");
+        System.out.println("1.- Let's start");
+        System.out.println("2.- Close");
     }
-    
+
     public static void imprimirMenuProovedor() {
-    String imprimir = "" ; 
-    imprimir+="What would you like to do? \n";
-    imprimir+="1.-Create Proyect \n";
-    imprimir+="2.-Check how many tickets are selling of an event that has not yet been made \n"; 
-    imprimir+="3.-Log out";
+        String imprimir = "";
+        imprimir += "What would you like to do? \n";
+        imprimir += "1.-Create Proyect \n";
+        imprimir += "2.-Check how many tickets are selling of an event that has not yet been made \n";
+        imprimir += "3.-Log out";
         System.out.println(imprimir);
     }
 }
