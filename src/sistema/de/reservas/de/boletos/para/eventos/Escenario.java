@@ -25,6 +25,40 @@ public class Escenario {
      this.ubicacion= ubicacion; 
      this.capacidadAsistentes=capacidadAsistentes; 
      }
+
+    public String getNombreEscenario() {
+        return nombreEscenario;
+    }
+
+    public void setNombreEscenario(String nombreEscenario) {
+        this.nombreEscenario = nombreEscenario;
+    }
+
+    public String getCapacidadAsistentes() {
+        return capacidadAsistentes;
+    }
+
+    public void setCapacidadAsistentes(String capacidadAsistentes) {
+        this.capacidadAsistentes = capacidadAsistentes;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public String getCodigoEscenario() {
+        return codigoEscenario;
+    }
+
+    public void setCodigoEscenario(String codigoEscenario) {
+        this.codigoEscenario = codigoEscenario;
+    }
+     
+     
      
     
      

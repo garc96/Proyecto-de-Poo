@@ -18,7 +18,7 @@ public class Funcion {
     private int BoletosVendidos;
     private int Boletos;
 
-    public Funcion(int numFunciones, Date date, float PrecioBoleto, int BoletosVendidos) {
+    public Funcion(Date date, float PrecioBoleto, int BoletosVendidos) {
        
         this.date = date;
         this.PrecioBoleto = PrecioBoleto;
@@ -33,7 +33,7 @@ public class Funcion {
         this.nameFuncion = nameFuncion;
     }
 
-
+//Integer.parseInt("");
     public Date getDate() {
         return date;
     }
@@ -62,5 +62,10 @@ public class Funcion {
         return this.Boletos - this.BoletosVendidos;
     }
    
+    public String keepWriting(String msj){
+        msj+="fecha "+ date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getYear()+" ,"+getPrecioBoleto()+", 0";
+        return msj;
+    }
     
+   
 }

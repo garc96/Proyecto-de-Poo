@@ -5,6 +5,8 @@
  */
 package sistema.de.reservas.de.boletos.para.eventos;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Garc
@@ -14,10 +16,20 @@ public class Evento {
     private String descripcionEvento; 
     private Escenario escenario ; 
     private int codigo; 
-    private Funcion funcion;   
+    private Funcion func;   
  
     
     public Evento(){}
+    
+    public Evento(int codigo, String name, String desEv, Escenario esc, Funcion func ){
+    this.nombreEvento=name;
+    this.codigo=codigo;
+    this.escenario=esc;
+    this.descripcionEvento=desEv;
+    this.func=func;
+    
+    
+    }
     public enum Categoria {  Concierto,  PartidoDeFútbol,   Teatro}
     
 
@@ -55,13 +67,11 @@ public class Evento {
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
-
-    public Funcion getFuncion() {
-        return funcion;
-    }
-
-    public void setFuncion(Funcion funcion) {
-        this.funcion = funcion;
+    
+    public String mensajeEscribir(String categoriaa,String nombreUser){
+    String msj="";
+    msj+=getCodigo()+" ,"+getNombreEvento()+" ,"+getDescripcionEvento()+" ,"+categoriaa+" ,"+escenario.getCodigoEscenario()+" ,"+ nombreUser+", ";
+    return msj ;
     }
     
     
